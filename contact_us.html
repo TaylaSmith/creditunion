@@ -286,26 +286,22 @@ div.thumbnail .glyphicon-ok-circle{
 
 
 
-
-
-<div class="form-group recaptcha">
+<div class='form-group recaptcha'>
   <script type="text/javascript">
   	function renderReCaptcha(){
   		var jfKey = '6LdopwYTAAAAABunoQoWr5mZGVpVSmTFumNM8ZfO', // when form loaded from jqueryform.com
   		realKey = '6LePbqMUAAAAACAWt4S9Y-45k50qtRiPrO_tOMEW',
   		theme = 'light',
-  		key = -1 !== location.href.indexOf('taylasmith.github.io/creditunion/') ? jfKey : realKey;
+  		key = -1 !== location.href.indexOf('taylasmith.github.io/') ? jfKey : realKey;
   		grecaptcha.render( document.getElementById('g-recaptcha'), {
           'sitekey' : key,
           'theme' : theme
         });
   	};
   </script>
-  <script src="https://www.google.com/recaptcha/api.js?hl=&amp;onload=renderReCaptcha&amp;render=explicit" async="" defer=""></script>
-  <div id="g-recaptcha" class="g-recaptcha col_field" data-theme="light" data-sitekey="6LePbqMUAAAAACAWt4S9Y-45k50qtRiPrO_tOMEW"></div>
+  <script src="https://www.google.com/recaptcha/api.js?hl=&onload=renderReCaptcha&render=explicit" async defer></script>
+  <div id='g-recaptcha' class='g-recaptcha col_field' data-theme='light' data-sitekey='6LePbqMUAAAAACAWt4S9Y-45k50qtRiPrO_tOMEW'></div>
 </div>
-
-
 
 
 
